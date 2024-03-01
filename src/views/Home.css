@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "RussoOne-Regular";
+    src: url(/src/fonts/russo-one/russoone-regular-webfont.woff) format("woff"),
+        url(/src/fonts/russo-one/russoone-regular-webfont.woff2) format("woff2");
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.headerContainer {
+    position: relative;
+    z-index: 2;
+}
+
+.banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.overlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.overlayText p {
+    font-family: "RussoOne-Regular";
+    font-size: 20vw;
+    box-shadow: black;
+    letter-spacing: 1vw;
+}
