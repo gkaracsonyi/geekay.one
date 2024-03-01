@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "RussoOne-Regular";
+    src: url(/src/fonts/russo-one/russoone-regular-webfont.woff) format("woff"),
+        url(/src/fonts/russo-one/russoone-regular-webfont.woff2) format("woff2");
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-in-out .2s;
+    color: white;
+    padding: 10px 35px;
+    position: relative;
+}
+
+.header--logo
+
+.logo {
+    font-family: "RussoOne-Regular";
+    font-size: 28px;
+}
+
+.header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.header:hover {
+    background-color: white;
+    color: black;
+}
+
+.header:hover button {
+    color: black;
+}
+
+.header--menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.header--menu button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px 8px;
+    transition: ease-in-out .2s;
+}
+
+.header--menu button:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.header--social {
+    display: flex;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(310deg) brightness(105%) contrast(101%);
+    margin-left: auto;
+}
+
+.header--social img {
+    margin: auto;
+}
+
+.header:hover .header--social {
+    filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
+}
